@@ -10,6 +10,7 @@ import model.Token;
 import repository.TokenRepository;
 
 @Configuration
+//This is custom login repository
 public class CustomLogoutHandler implements LogoutHandler {
 
     private final TokenRepository tokenRepository;
