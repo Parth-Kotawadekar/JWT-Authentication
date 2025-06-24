@@ -1,12 +1,12 @@
-package repository;
+package com.jwt_auth.api.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import model.User;
+import com.jwt_auth.api.model.User;
 
 public interface UserRepository extends JpaRepository<User, Integer>{
 
-	Optional<User> findByUsername(String username);
+	Optional<User> findUserByUsername(String username);
 }
